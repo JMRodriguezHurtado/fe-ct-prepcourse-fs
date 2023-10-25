@@ -39,10 +39,10 @@ function saludo(idioma) {
    // Si "idioma" es "ingles", devuelve "Hello!".
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
-switch (idioma) {case 'aleman': return ("Guten Tag!"); break;
- case 'mandarin': return ("Ni Hao!"); break;
- case 'ingles': return ("Hello!"); break;
- default: return "Hola!";}
+   switch (idioma) {case 'aleman': return ("Guten Tag!"); break;
+   case 'mandarin': return ("Ni Hao!"); break;
+   case 'ingles': return ("Hello!"); break;
+   default: return "Hola!";}
 }
 
 function colors(color) {
@@ -55,10 +55,10 @@ function colors(color) {
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
    switch (color) { case 'blue': return ("This is blue"); break; 
-case 'red': return ("This is red"); break;
-case 'green': return ("This is green"); break;
-case 'orange': return ("This is orange"); break;
-default: return "Color not found"}
+   case 'red': return ("This is red"); break;
+   case 'green': return ("This is green"); break;
+   case 'orange': return ("This is orange"); break;
+   default: return "Color not found"}
 }
 
 function esDiezOCinco(num) {
@@ -112,7 +112,7 @@ function operadoresLogicos(num1, num2, num3) {
 } else if (num1 < 0 || num2 < 0 || num3 <0) {return ("Hay negativos");
 } else if (num1 === 0 && num2 === 0 && num3 === 0) {return ("Error");
 } else if (num3 > num1 && num3 > num2) {return (num3 = num3 + 1);
-} else return (false)  
+} else return (false)
 }
 
 function esPrimo(num) {
@@ -122,28 +122,27 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if (num < 2) return false;
-   if (num >= 2) {
-      for (let i = 2; i < num; i++){
-         if(num % i === 0) {return false;}
-      }
+if (num < 2) return false;
+if (num >= 2) {
+   for (let i = 2; i < num; i++) {
+      if (num % i === 0) {return false}
    }
-   return true;
+}
+return true;
 } 
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   if (Boolean(valor)) {return ("Soy verdadero") } else return "Soy falso";  
+     if (Boolean(valor)) {return ("Soy verdadero")} else return "Soy falso";
  }
 
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
-   if (num > 100 && num < 1000 || num === 100 ) {return (true);
-   } else return false
+   if (num > 100 && num < 1000 || num === 100) {return true} else return false;
 }
 
 function doWhile(num) {
@@ -152,8 +151,9 @@ function doWhile(num) {
    // Utilizar el bucle Do-While.
    // Tu código:
    let i = 0
-   do { num = num + 5; i++
-} while (i < 8); return (num);
+   do {num = num + 5; i++
+   } while (i < 8); return (num);
+
 
 }
 
