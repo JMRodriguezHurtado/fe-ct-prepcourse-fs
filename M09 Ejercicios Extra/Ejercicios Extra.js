@@ -64,19 +64,18 @@ function capicua(numero) {
    // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
    // Caso contrario: "No es capicua".
    // Tu código:
-   const volteado = numero.toString().split('').reverse().join('');
-   const normal = numero.toString();
-   if (volteado == normal) {  
-      return "Es capicua"
-   } else return "No es capicua"
-};
+   return new String(numero).split('').reverse().join('') ===
+   new String(numero).split('').join('')
+   ? 'Es capicua'
+   : 'No es capicua'
+}
 
 function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
-   return string.split('').filter((letra) => !(letra === 'a' || letra === 'b'|| letra === 'c')
-).join('')
+   return string.split('').filter((letra) => {return !(letra === 'a' || letra === 'b' || letra === 'c')
+}).join('')
 }
 
 function sortArray(arrayOfStrings) {
@@ -85,7 +84,9 @@ function sortArray(arrayOfStrings) {
    // de la longitud de cada string.
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
-   return arrayOfStrings.sort((str1, str2) => str1.length - str2.length)
+   return arrayOfStrings.sort((str1, str2) => {
+      return str1.length - str2.length
+   })
 }
 
 function buscoInterseccion(array1, array2) {
@@ -95,7 +96,9 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
-   return array1.filter((elemento) => array2.includes(elemento));
+   return array1.filter((element) => {
+      return array2.includes(element)
+   })
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
