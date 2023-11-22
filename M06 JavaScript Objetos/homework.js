@@ -88,8 +88,8 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
    // Debes agregar el "nuevoAmigo" al final de este arreglo.
    // Retornar el objeto.
    // Tu código:
-  objetoUsuario.amigos.push(nuevoAmigo);
-  return objetoUsuario;
+   objetoUsuario.amigos.push(nuevoAmigo);
+   return objetoUsuario;
 }
 
 function pasarUsuarioAPremium(objetoMuchosUsuarios) {
@@ -99,8 +99,7 @@ function pasarUsuarioAPremium(objetoMuchosUsuarios) {
    // Retornar el arreglo.
    // Tu código:
    const updatedUsers = objetoMuchosUsuarios.map((usuario) => {usuario.esPremium = true;
-   return usuario
-}); return updatedUsers 
+   return usuario}); return updatedUsers
 }
 
 function sumarLikesDeUsuario(objetoUsuario) {
