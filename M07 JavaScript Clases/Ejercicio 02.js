@@ -34,7 +34,7 @@ function agregarMetodo() {
    // Este método toma la propiedad "nombre" y "edad", y devuelve el string:
    // Ejemplo: "Juan, 22 años".
    // Tu código:
-   Persona.prototype.datos = function () {
+   Persona.prototype.datos = function() {
       return this.nombre + ', ' + this.edad + ' años'
    }
 }
